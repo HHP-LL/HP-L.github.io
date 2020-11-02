@@ -19,7 +19,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>Hello World - Lake</title>
+  <title>DIY时钟 - Lake</title>
   
 
   
@@ -393,7 +393,7 @@
     
     
       <h1 class="title">
-        Hello World
+        DIY时钟
       </h1>
       <div class='new-meta-box'>
         
@@ -417,7 +417,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年10月31日</p>
+    <p>发布于：2020年11月2日</p>
   </a>
 </div>
 
@@ -428,7 +428,7 @@
   <div class="new-meta-item browse leancloud">
     <a class='notlink'>
       
-      <div id="lc-pv" data-title="Hello World" data-path="/2020/10/31/hello-world/hello-world/">
+      <div id="lc-pv" data-title="DIY时钟" data-path="/2020/11/02/DIY%E6%97%B6%E9%92%9F/diy%E6%97%B6%E9%92%9F/">
         <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
         <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
         次浏览
@@ -445,19 +445,7 @@
 
 
   
-  <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+  <h1 id="DIY闹钟"><a href="#DIY闹钟" class="headerlink" title="DIY闹钟"></a>DIY闹钟</h1><h2 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">k1_mode 切换模式</span><br><span class="line">    --&gt; k2_up   时间加+</span><br><span class="line">    --&gt; k3_down 时间-</span><br><span class="line">    --&gt; k4_s    保存</span><br><span class="line"></span><br><span class="line">k2_up 环形五灯_看天气_修改地区</span><br><span class="line">    --&gt; 立即显示温度，不显示时间</span><br><span class="line">    --&gt; led点亮地区说明</span><br><span class="line">                       *1[6]</span><br><span class="line"></span><br><span class="line">                  *5[10]    *2[7]</span><br><span class="line">                                    *颜色1: p15 &#x3D; 0  L* &#x3D; 1</span><br><span class="line"></span><br><span class="line">                    *4[9] *3[8]   [*]颜色2: p15 &#x3D; 1  L* &#x3D; 0</span><br><span class="line"></span><br><span class="line">    *1: 晴 *2: 阴 *3: 雪 *4: 雨 *5: 风</span><br><span class="line">    [6: 无 [7: 无 [8: 无 [9: 无 [0: 无</span><br><span class="line"></span><br><span class="line">    --&gt; k1_mode  切换地区(LED灯顺时针切换)</span><br><span class="line"></span><br><span class="line">    *1: 东莞 *2: 韶关 *3: 广州 *4: 上海 *5: 深圳</span><br><span class="line">    [6: 无无 [7: 无无 [8: 无无 [9: 无无 [0: 无无</span><br><span class="line"></span><br><span class="line">    --&gt; k3_down</span><br><span class="line"></span><br><span class="line">    保存地区并返回上面一级看天气</span><br><span class="line"></span><br><span class="line">    --&gt; k4_s     退出温度显示</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">k3_down 看日期</span><br><span class="line">    --&gt; k1_mode 切换月份和日期</span><br><span class="line">    --&gt; k2_up   日期加+</span><br><span class="line">    --&gt; k3_down 时日期-</span><br><span class="line">    --&gt; k4_s    保存</span><br><span class="line"></span><br><span class="line">k4_s 开发中</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
   
   
@@ -475,7 +463,7 @@
               
             
               
-                <p>本文永久链接是：<a href=https://hp-l.github.io/2020/10/31/hello-world/hello-world/>https://hp-l.github.io/2020/10/31/hello-world/hello-world/</a></p>
+                <p>本文永久链接是：<a href=https://hp-l.github.io/2020/11/02/DIY%E6%97%B6%E9%92%9F/diy%E6%97%B6%E9%92%9F/>https://hp-l.github.io/2020/11/02/DIY%E6%97%B6%E9%92%9F/diy%E6%97%B6%E9%92%9F/</a></p>
               
             
           </blockquote>
@@ -492,10 +480,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-10-31T08:39:47+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-11-02T15:56:45+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年10月31日</p>
+    <p>更新于：2020年11月2日</p>
   </a>
 </div>
 
@@ -514,7 +502,7 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://hp-l.github.io/2020/10/31/hello-world/hello-world/&title=Hello World - Lake&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://hp-l.github.io/2020/11/02/DIY%E6%97%B6%E9%92%9F/diy%E6%97%B6%E9%92%9F/&title=DIY时钟 - Lake&summary="
           
           >
           
@@ -526,7 +514,7 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://hp-l.github.io/2020/10/31/hello-world/hello-world/&title=Hello World - Lake&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://hp-l.github.io/2020/11/02/DIY%E6%97%B6%E9%92%9F/diy%E6%97%B6%E9%92%9F/&title=DIY时钟 - Lake&summary="
           
           >
           
@@ -538,7 +526,7 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://hp-l.github.io/2020/10/31/hello-world/hello-world/&title=Hello World - Lake&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://hp-l.github.io/2020/11/02/DIY%E6%97%B6%E9%92%9F/diy%E6%97%B6%E9%92%9F/&title=DIY时钟 - Lake&summary="
           
           >
           
@@ -568,11 +556,11 @@
   
     <div class="prev-next">
       
-        <a class='prev' href='/2020/11/02/DIY%E6%97%B6%E9%92%9F/diy%E6%97%B6%E9%92%9F/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>DIY时钟</p>
-          <p class='content'>DIY闹钟使用说明1234567891011121314151617181920212223242526272829303132333435363738k1_mode 切换模式    --&gt...</p>
-        </a>
       
+        <a class='next' href='/2020/10/31/hello-world/hello-world/'>
+          <p class='title'>Hello World<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any ...</p>
+        </a>
       
     </div>
   
@@ -614,7 +602,7 @@
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E"><span class="toc-text">使用说明</span></a></li></ol>
     </div>
   </section>
 
@@ -634,7 +622,7 @@
 <script>
   window.pdata={}
   pdata.ispage=true;
-  pdata.postTitle="Hello World";
+  pdata.postTitle="DIY时钟";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
 
