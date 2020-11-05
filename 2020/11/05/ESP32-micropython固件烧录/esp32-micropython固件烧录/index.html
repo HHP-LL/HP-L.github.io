@@ -447,14 +447,44 @@
 
 
   
-  <h1 id="ESP32-micropython固件烧录"><a href="#ESP32-micropython固件烧录" class="headerlink" title="ESP32_micropython固件烧录"></a>ESP32_micropython固件烧录</h1><h2 id="烧录准备"><a href="#烧录准备" class="headerlink" title="烧录准备"></a>烧录准备</h2><p>1.micropython IDE：<a target="_blank" rel="noopener" href="https://thonny.org/">Thonny</a><br><img src="./thonny_download.png" class="lazyload placeholder" data-srcset="./thonny_download.png" srcset="loading.svg" alt="thonny_download.png"><br>2.ESP32的micropython固件：<a target="_blank" rel="noopener" href="https://www.micropython.org/download/esp32/">戳我进下载页面</a>，micropython还支持其他芯片<a target="_blank" rel="noopener" href="https://www.micropython.org/download/">link</a>，下载页面有很多固件选择，由于我的是不带SPIRAM的，因此我选择了第一个。<br><img src="./micropython%E5%9B%BA%E4%BB%B6.png" class="lazyload placeholder" data-srcset="./micropython%E5%9B%BA%E4%BB%B6.png" srcset="loading.svg" alt="micropython固件"><br>3.烧录工具：<br>这里提供两种，esptool在GitHub上有教程，这里就不细讲。</p>
+  <h1 id="ESP32-micropython固件烧录"><a href="#ESP32-micropython固件烧录" class="headerlink" title="ESP32_micropython固件烧录"></a>ESP32_micropython固件烧录</h1><h2 id="烧录准备"><a href="#烧录准备" class="headerlink" title="烧录准备"></a>烧录准备</h2><p>1.micropython IDE：<a target="_blank" rel="noopener" href="https://thonny.org/">Thonny</a></p>
+<div class="gallery ">
+              <p><img src="./thonny_download.png" class="lazyload placeholder" data-srcset="./thonny_download.png" srcset="loading.svg" alt="thonny_download.png"></p>
+            </div>
+<p>2.ESP32的micropython固件：<a target="_blank" rel="noopener" href="https://www.micropython.org/download/esp32/">戳我进下载页面</a>，micropython还支持其他芯片<a target="_blank" rel="noopener" href="https://www.micropython.org/download/">link</a>，下载页面有很多固件选择，由于我的是不带SPIRAM的，因此我选择了第一个。</p>
+<div class="gallery ">
+              <p><img src="./micropython%E5%9B%BA%E4%BB%B6.png" class="lazyload placeholder" data-srcset="./micropython%E5%9B%BA%E4%BB%B6.png" srcset="loading.svg" alt="micropython固件"></p>
+            </div>
+<p>3.烧录工具：<br>这里提供两种，esptool在GitHub上有教程，这里就不细讲。</p>
 <ul>
 <li>esptool：<a target="_blank" rel="noopener" href="https://github.com/espressif/esptool">github link</a></li>
 <li>Thonny: micropython IDE</li>
-<li>Flash 下载工具：<a target="_blank" rel="noopener" href="https://www.espressif.com/support/download/other-tools">link</a><img src="./%E7%83%A7%E5%BD%95%E5%B7%A5%E5%85%B7.png" class="lazyload placeholder" data-srcset="./%E7%83%A7%E5%BD%95%E5%B7%A5%E5%85%B7.png" srcset="loading.svg" alt="烧录工具.png"></li>
+<li>Flash 下载工具：<a target="_blank" rel="noopener" href="https://www.espressif.com/support/download/other-tools">link</a><div class="gallery ">
+              <p><img src="./%E7%83%A7%E5%BD%95%E5%B7%A5%E5%85%B7.png" class="lazyload placeholder" data-srcset="./%E7%83%A7%E5%BD%95%E5%B7%A5%E5%85%B7.png" srcset="loading.svg" alt="烧录工具.png"></p>
+            </div></li>
 </ul>
 <p>4.ESP32模组</p>
-<h2 id="烧录过程"><a href="#烧录过程" class="headerlink" title="烧录过程"></a>烧录过程</h2>
+<h2 id="烧录过程"><a href="#烧录过程" class="headerlink" title="烧录过程"></a>烧录过程</h2><h3 id="使用Thonny烧录"><a href="#使用Thonny烧录" class="headerlink" title="使用Thonny烧录"></a>使用Thonny烧录</h3><p>点击工具栏运行，选择“选择解释器…”</p>
+<div class="gallery ">
+              <p><img src="./Thonny_%E7%83%A7%E5%BD%95%E5%9B%BA%E4%BB%B6.png" class="lazyload placeholder" data-srcset="./Thonny_%E7%83%A7%E5%BD%95%E5%9B%BA%E4%BB%B6.png" srcset="loading.svg" alt="Thonny_烧录固件.png"><br><img src="./Thonny_%E7%83%A7%E5%BD%95%E5%9B%BA%E4%BB%B61.png" class="lazyload placeholder" data-srcset="./Thonny_%E7%83%A7%E5%BD%95%E5%9B%BA%E4%BB%B61.png" srcset="loading.svg" alt="Thonny_烧录固件1.png"></p>
+            </div>
+
+<p>选择我们在Micropython官网下载的固件后点击install<br>这是从ESP官网上下载的启动模式方法：</p>
+<div class="gallery ">
+              <p><img src="./%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F.png" class="lazyload placeholder" data-srcset="./%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F.png" srcset="loading.svg" alt="启动模式.png"><br><img src="./%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F1.png" class="lazyload placeholder" data-srcset="./%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F1.png" srcset="loading.svg" alt="启动模式1.png"></p>
+            </div>
+<p>即<span class='p red'>GPIO0和GPIO2全部接地，同时按下复位按键，保持1毫秒再断开GPIO0断开接地</span>（因为GPIO0默认上拉），便开始下载。</p>
+<h3 id="使用Flash-下载工具"><a href="#使用Flash-下载工具" class="headerlink" title="使用Flash 下载工具"></a>使用Flash 下载工具</h3><p>从官网下载了工具后双击打开，等待几秒后，点击ESP32downloadTools，选择我们在Micropython官网下载的固件后点击START</p>
+<div class="gallery ">
+              <p><img src="./flash_download.png" class="lazyload placeholder" data-srcset="./flash_download.png" srcset="loading.svg" alt="flash_download.png"><br><img src="./flash_download1.png" class="lazyload placeholder" data-srcset="./flash_download1.png" srcset="loading.svg" alt="flash_download1.png"></p>
+            </div>
+<p>再按照上文中的启动方法启动即可下载。</p>
+<p>成功之后shell会出现下图：</p>
+<div class="gallery ">
+              <p><img src="./SHELL.png" class="lazyload placeholder" data-srcset="./SHELL.png" srcset="loading.svg" alt="SHELL.png"></p>
+            </div>
+<p>像python一样可以实时输入，ESP32可以直接看到LED灯被点亮</p>
+
   
   
     
@@ -488,7 +518,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-11-05T11:11:35+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-11-05T13:44:16+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2020年11月5日</p>
@@ -610,7 +640,7 @@
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%83%A7%E5%BD%95%E5%87%86%E5%A4%87"><span class="toc-text">烧录准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%83%A7%E5%BD%95%E8%BF%87%E7%A8%8B"><span class="toc-text">烧录过程</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%83%A7%E5%BD%95%E5%87%86%E5%A4%87"><span class="toc-text">烧录准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%83%A7%E5%BD%95%E8%BF%87%E7%A8%8B"><span class="toc-text">烧录过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8Thonny%E7%83%A7%E5%BD%95"><span class="toc-text">使用Thonny烧录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8Flash-%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7"><span class="toc-text">使用Flash 下载工具</span></a></li></ol></li></ol>
     </div>
   </section>
 
