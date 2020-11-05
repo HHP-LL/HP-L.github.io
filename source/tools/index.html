@@ -1256,6 +1256,21 @@ var loadCSS = function( href, before, media, attributes ){
 
 
 
+  <script>
+  function loadIssuesJS() {
+    if ($(".md").find(".issues-api").length == 0) return;
+    setTimeout(function() {
+	
+	  loadScript('https://cdn.jsdelivr.net/npm/hexo-theme-volantis@4.1.5/source/js/issues.min.js');
+	
+    }, 1);
+  };
+  $(function () {
+    loadIssuesJS();
+  });
+</script>
+
+
 
 
   <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
@@ -1947,6 +1962,10 @@ document.addEventListener("pjax:success", listennSidebarTOC);
         
         
         
+        
+          if (typeof IssuesAPI == "undefined") {
+            loadIssuesJS();
+          }
         
         
         
