@@ -21,7 +21,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>标签：博客 - WATER</title>
+  <title>标签：自制小玩具 - WATER</title>
   
 
   
@@ -803,27 +803,29 @@
   
     
     <h2 class="article-title" >
-      <a href="/2020/05/14/hexo-volantis%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E5%85%A8%E5%B1%80%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E5%8C%85%E6%97%B6%E8%A7%A3%E5%86%B3eacces%E6%9D%83%E9%99%90%E9%94%99%E8%AF%AF/">
-        全局安装软件包时解决EACCES权限错误
+      <a href="/2020/11/02/DIY%E6%97%B6%E9%92%9F/esp32%E7%94%B5%E5%AD%90%E9%92%9F/">
+        ESP32电子钟
       </a>
     </h2>
   
   <div class='md'>
     
-      <h4 id="全局安装软件包时解决EACCES权限错误"><a href="#全局安装软件包时解决EACCES权限错误" class="headerlink" title="全局安装软件包时解决EACCES权限错误"></a>全局安装软件包时解决EACCES权限错误</h4><p><a target="_blank" rel="noopener" href="https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally">原文链接</a><br>如果EACCES在尝试全局安装软件包时看到错误，则可以：</p>
-<p>使用节点版本管理器重新安装npm（推荐），<br>要么<br>手动更改<code>npm</code>的默认目录<br>重新安装<code>NPM</code>与节点版本管理§</p>
+      
+        基于ESP32的电子钟初衷原本只是想做一个电子钟，放在桌上更方便看时间，没想到最终做成了插件，板子底部有正反两面金手指(文末写出淘宝链接)，引出了ESP32的20个引脚，可以连接其他板子使用。因为经验不足没有想到更好的供电方案，索性就把库存的升压和稳压模块直接拿出来用了。因为第一次制作，原理图设计和layout设计很多方面都设计的不是特别合理(希望有大佬在留言区提出建议😊)
+使用说明123...
+      
     
   </div>
   
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time>2020-05-14</time>
+        <time>2020-11-02</time>
         
       </div>
       
         <div>
-          <a class='readmore' href='/2020/05/14/hexo-volantis%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E5%85%A8%E5%B1%80%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E5%8C%85%E6%97%B6%E8%A7%A3%E5%86%B3eacces%E6%9D%83%E9%99%90%E9%94%99%E8%AF%AF/'>
+          <a class='readmore' href='/2020/11/02/DIY%E6%97%B6%E9%92%9F/esp32%E7%94%B5%E5%AD%90%E9%92%9F/'>
             阅读全文
           </a>
         </div>
@@ -911,29 +913,6 @@
   
     
     
-  
-
-  <section class="widget category shadow floatable blur desktop">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80/"
-            id="categoriesE8AEA1E7AE97E69CBAE8AFADE8A880"
-            ><div class='name'>计算机语言</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
 
   
 
@@ -952,7 +931,7 @@
 
 
     <div class='content'>
-      <a href="/tags/markdown/" style="font-size: 14px; color: #999">markdown</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 14px; color: #999">博客</a>
+      <a href="/tags/ESP32/" style="font-size: 24px; color: #555">ESP32</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/markdown/" style="font-size: 14px; color: #999">markdown</a> <a href="/tags/micropython/" style="font-size: 14px; color: #999">micropython</a> <a href="/tags/%E8%87%AA%E5%88%B6%E5%B0%8F%E7%8E%A9%E5%85%B7/" style="font-size: 14px; color: #999">自制小玩具</a>
     </div>
   </section>
 
@@ -997,6 +976,11 @@
 
 
       
+        <div class="webinfo-item">
+          <div>本站总字数：</div>
+          <div>2.3k 字</div>
+        </div>
+      
 
       
         <div class="webinfo-item">
@@ -1020,8 +1004,8 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Fri Nov 06 2020 12:41:18 GMT+0800 (Central Standard Time)</div>
-            <div id="last-update-show">2020-11-06 日</div>
+            <div id="last-update" style="display: none;">Sat Nov 07 2020 01:40:27 GMT+0800 (Central Standard Time)</div>
+            <div id="last-update-show">2020-11-07 日</div>
           
         </div>
         
@@ -1071,7 +1055,7 @@
           try {
             document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
           } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2020-11-06 日';
+            document.getElementById('last-update-show').innerHTML = '2020-11-07 日';
           }
         </script>
         
@@ -1417,6 +1401,10 @@ var loadCSS = function( href, before, media, attributes ){
   loadCSS("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/css/all.min.css", window.volantis.loadcss);
   
   
+  loadCSS("https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css", window.volantis.loadcss);
+  
+  
+  loadCSS("https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css", window.volantis.loadcss);
   
   
 </script>
@@ -1504,7 +1492,7 @@ var loadCSS = function( href, before, media, attributes ){
           $.backstretch(
             imgs,
           {
-            duration: "10000",
+            duration: "6000",
             fade: "1500"
           });
         
@@ -1558,14 +1546,14 @@ var loadCSS = function( href, before, media, attributes ){
         
           
     <li>
-      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/examples/
+      <a class='vlts-menu fix-cursor-default' href=/about
         
         
         
         
-          id="https:volantisjsorgexamples"
+          id="about"
         >
-        <i class='fa fa-rss fa-fw'></i> 示例博客
+        <i class='fas fa-info-circle fa-fw'></i> 关于
       </a>
     </li>
   
@@ -1930,7 +1918,7 @@ setTimeout(function() {
   function pjax_valine() {
     if(!document.querySelectorAll("#valine_container")[0])return;
 
-    let pagePlaceholder = pdata.commentPlaceholder || "快来评论吧~";
+    let pagePlaceholder = pdata.commentPlaceholder || "Just Go Go~";
 
     let path = pdata.commentPath;
     if (path.length == 0) {
@@ -1951,7 +1939,7 @@ setTimeout(function() {
       lang: 'zh-cn',
       visitor: 'true',
       highlight: 'true',
-      mathJax: 'false',
+      mathJax: 'true',
       enableQQ: 'true',
       recordIP: 'false',
       requiredFields: requiredFields,
@@ -2001,6 +1989,21 @@ document.addEventListener("DOMContentLoaded", listenSearch);
 
 
 
+
+  
+<script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
 
 
 

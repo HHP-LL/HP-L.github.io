@@ -1014,6 +1014,10 @@ var loadCSS = function( href, before, media, attributes ){
   loadCSS("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/css/all.min.css", window.volantis.loadcss);
   
   
+  loadCSS("https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css", window.volantis.loadcss);
+  
+  
+  loadCSS("https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css", window.volantis.loadcss);
   
   
 </script>
@@ -1101,7 +1105,7 @@ var loadCSS = function( href, before, media, attributes ){
           $.backstretch(
             imgs,
           {
-            duration: "10000",
+            duration: "6000",
             fade: "1500"
           });
         
@@ -1155,14 +1159,14 @@ var loadCSS = function( href, before, media, attributes ){
         
           
     <li>
-      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/examples/
+      <a class='vlts-menu fix-cursor-default' href=/about
         
         
         
         
-          id="https:volantisjsorgexamples"
+          id="about"
         >
-        <i class='fa fa-rss fa-fw'></i> 示例博客
+        <i class='fas fa-info-circle fa-fw'></i> 关于
       </a>
     </li>
   
@@ -1527,7 +1531,7 @@ setTimeout(function() {
   function pjax_valine() {
     if(!document.querySelectorAll("#valine_container")[0])return;
 
-    let pagePlaceholder = pdata.commentPlaceholder || "快来评论吧~";
+    let pagePlaceholder = pdata.commentPlaceholder || "Just Go Go~";
 
     let path = pdata.commentPath;
     if (path.length == 0) {
@@ -1548,7 +1552,7 @@ setTimeout(function() {
       lang: 'zh-cn',
       visitor: 'true',
       highlight: 'true',
-      mathJax: 'false',
+      mathJax: 'true',
       enableQQ: 'true',
       recordIP: 'false',
       requiredFields: requiredFields,
@@ -1598,6 +1602,21 @@ document.addEventListener("DOMContentLoaded", listenSearch);
 
 
 
+
+  
+<script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
 
 
 

@@ -814,7 +814,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年11月2日</p>
+    <p>发布于：2020年11月7日</p>
   </a>
 </div>
 
@@ -919,7 +919,7 @@ links:                                                       - group: 博客主�
 
 
     <div class='content'>
-      <a href="/tags/markdown/" style="font-size: 14px; color: #999">markdown</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 14px; color: #999">博客</a>
+      <a href="/tags/ESP32/" style="font-size: 24px; color: #555">ESP32</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/markdown/" style="font-size: 14px; color: #999">markdown</a> <a href="/tags/micropython/" style="font-size: 14px; color: #999">micropython</a> <a href="/tags/%E8%87%AA%E5%88%B6%E5%B0%8F%E7%8E%A9%E5%85%B7/" style="font-size: 14px; color: #999">自制小玩具</a>
     </div>
   </section>
 
@@ -964,6 +964,11 @@ links:                                                       - group: 博客主�
 
 
       
+        <div class="webinfo-item">
+          <div>本站总字数：</div>
+          <div>2.3k 字</div>
+        </div>
+      
 
       
         <div class="webinfo-item">
@@ -987,8 +992,8 @@ links:                                                       - group: 博客主�
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Fri Nov 06 2020 12:41:18 GMT+0800 (Central Standard Time)</div>
-            <div id="last-update-show">2020-11-06 日</div>
+            <div id="last-update" style="display: none;">Sat Nov 07 2020 01:40:27 GMT+0800 (Central Standard Time)</div>
+            <div id="last-update-show">2020-11-07 日</div>
           
         </div>
         
@@ -1038,7 +1043,7 @@ links:                                                       - group: 博客主�
           try {
             document.getElementById('last-update-show').innerHTML = timeago(new Date(lastUpDate));
           } catch (error) {
-            document.getElementById('last-update-show').innerHTML = '2020-11-06 日';
+            document.getElementById('last-update-show').innerHTML = '2020-11-07 日';
           }
         </script>
         
@@ -1391,6 +1396,10 @@ var loadCSS = function( href, before, media, attributes ){
   loadCSS("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/css/all.min.css", window.volantis.loadcss);
   
   
+  loadCSS("https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css", window.volantis.loadcss);
+  
+  
+  loadCSS("https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css", window.volantis.loadcss);
   
   
 </script>
@@ -1478,7 +1487,7 @@ var loadCSS = function( href, before, media, attributes ){
           $.backstretch(
             imgs,
           {
-            duration: "10000",
+            duration: "6000",
             fade: "1500"
           });
         
@@ -1532,14 +1541,14 @@ var loadCSS = function( href, before, media, attributes ){
         
           
     <li>
-      <a class='vlts-menu fix-cursor-default' href=https://volantis.js.org/examples/
+      <a class='vlts-menu fix-cursor-default' href=/about
         
         
         
         
-          id="https:volantisjsorgexamples"
+          id="about"
         >
-        <i class='fa fa-rss fa-fw'></i> 示例博客
+        <i class='fas fa-info-circle fa-fw'></i> 关于
       </a>
     </li>
   
@@ -1904,7 +1913,7 @@ setTimeout(function() {
   function pjax_valine() {
     if(!document.querySelectorAll("#valine_container")[0])return;
 
-    let pagePlaceholder = pdata.commentPlaceholder || "快来评论吧~";
+    let pagePlaceholder = pdata.commentPlaceholder || "Just Go Go~";
 
     let path = pdata.commentPath;
     if (path.length == 0) {
@@ -1925,7 +1934,7 @@ setTimeout(function() {
       lang: 'zh-cn',
       visitor: 'true',
       highlight: 'true',
-      mathJax: 'false',
+      mathJax: 'true',
       enableQQ: 'true',
       recordIP: 'false',
       requiredFields: requiredFields,
@@ -1975,6 +1984,21 @@ document.addEventListener("DOMContentLoaded", listenSearch);
 
 
 
+
+  
+<script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
 
 
 
